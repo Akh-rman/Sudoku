@@ -1,0 +1,83 @@
+* {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+html {
+    margin-top: 30px; 
+}
+
+#AREA {
+    font-size: 20px;
+    height
+}
+
+#HIDED {
+    font-size: 20px;
+}
+
+#button {
+    height: 50px;
+    width: 200px;
+    border: solid 3px;
+    background: white;
+}
+
+#playGround {
+    width: 100%;
+}
+
+.sudoku {
+    display: inline-table;
+    border: solid 2px;
+    border-spacing: 1px;
+}
+
+.sudoku td {
+    border: solid 1px;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sudoku td.top {
+    border-top: solid 2px;
+}
+
+.sudoku td.bottom {
+    border-bottom: solid 2px;
+}
+
+.sudoku td.left {
+    border-left: solid 2px;
+}
+
+.sudoku td.right {
+    border-right: solid 2px;
+}
+
+.sudoku input {
+    width: inherit;
+    height: inherit;
+    padding: 0;
+    text-align: center;
+    color: browm;
+    background: none;
+    font-size: 30px;
+}
+
+/*.sudoku .marked {
+    background-color: #9ce29c;
+}*/
+
+.sudoku .mistake {
+    background-color: darksalmon;
+}
+
+.timer {
+    margin-top: 20px;
+}
+
+.timer. display {
+    margin; 2rem;
+}
