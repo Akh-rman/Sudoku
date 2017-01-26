@@ -410,9 +410,9 @@ app.Timer.prototype = {
     }
 }
 app.parameters = {
-    area: 5,        //размер области
-    shuffle: 15,     //количество перемешиваний
-    hided: 300       //количество скрытых ячеек
+    area: 3,        //размер области
+    shuffle: 15,    //количество перемешиваний
+    hided: 45       //количество скрытых ячеек
 }
 
 var tbl = new app.Sudoku(app.parameters.area);
@@ -433,3 +433,4 @@ tbl.win = function() {
     alert("Поздравляем! Вы победили со счетом " + timer.getScore());
     timer.stop();
 }
+
