@@ -1,12 +1,32 @@
 * {
     font-family: Arial, sans-serif;
-    font-size: 30px;
     text-align: center;
 }
 
 html {
-    margin-top: 30px; 
+    position: relative;
+    min-height: 100%;
 }
+
+body {
+    font-size: 30px;
+}
+/*** Header ****/
+#header-nav {
+    background-color: #e84343;
+    text-align: center;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    margin: 0;
+}
+
+.navbar-header button.navbar-toggle {
+    border: 1px solid white;
+}
+
+/*** End Header ****/
+/**** Main content ***/
+
 
 #AREA {
     font-size: 20px;
@@ -81,3 +101,4 @@ html {
 .timer. display {
     margin; 2rem;
 }
+/***** End Main-content ****/
