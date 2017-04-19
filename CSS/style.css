@@ -32,6 +32,7 @@ body {
     display: block;
     /*float: none;*/
     margin-top: 6px;
+    text-align: center;
 }
 .navbar. navbar-nav div.left {
     display: inline;
