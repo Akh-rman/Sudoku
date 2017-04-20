@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-size: 25px;
+    font-size: 20px;
 }
 /*** Header ****/
 #header-nav {
@@ -16,31 +16,31 @@ body {
     text-align: center;
     border-bottom: 1px solid white;
     border-radius: 0;
-    margin: 0;
-    opacity: 0.75;
+    margin: auto;
 }
 
 .navbar-header button.navbar-toggle {
-    border: 1px solid #e0e061;
+    border: 1px solid #6188e0;
+    float: left;
+    margin-left: 15px;
+    z-index: 2;
+    background-color: #4186c4;
+    border-radius: 25px;
+    height: 45px;
+    width: 45px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #e0e061;
 }
-
+.navmenu {
+    display: block;
+}
 .navbar .navbar-nav {
     display: block;
     /*float: none;*/
     margin-top: 6px;
     text-align: center;
-}
-.navbar. navbar-nav div.left {
-    display: inline;
-}
-
-.navbar. navbar-nav div.right {
-    display: inline;
-    float: right;
 }
 
 .navbar .navbar-nav li a {
@@ -152,14 +152,19 @@ footer a:hover {
 /*** Extra small device ***/
 @media (max-width: 767px) {
     /*Костыль для navbar-nav. inline-block использовалось чтобы выровнить ссылки при больших размерах экрана. block используется, чтобы вернуть нормальный вид для xs размера в выпадающем меню  */
-    .navbar .navbar-nav {
-        display: block;
-        margin-top: 0;
-        margin-bottom: 0;
+    .navmenu {
+        padding-top: 65px;
+        width: 250px;
+        background-color: #6FA8DC;
+        border-right: 2px solid #5da1e0;
+        margin-left: -15px;
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
     }
-    .navbar .navbar-nav .left {
-        float: none;
-        display: block;
+    .navbar .navbar-nav {
+        margin: 0;
     }
     .navbar .navbar-nav li a {
         line-height: 30px;
@@ -168,7 +173,7 @@ footer a:hover {
         color: black;
     }
     .navbar .navbar-nav li:hover {
-        background: #e8e8e8; 
+        background: #e8e8e8;
     }
     .navbar .navbar-nav li a:hover {
         color: #4d4d4d;
@@ -176,11 +181,6 @@ footer a:hover {
     }
     #main-content > div {
         margin-bottom: 10px;
-    }
-    #main-content div ul li{
-        display: block;
-        text-align: center;
-        margin: 5px 0 5px 0;
     }
     .active-xs { /*Класс для выделения текущего сайта при размере xs*/
         background-color:#e8e8e8;
